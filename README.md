@@ -9,4 +9,4 @@ This website strives to be a home for the reader on his or her learning path and
 
 # License
 
-This project is released under the terms of the [MIT License.][mit] <3
+This project is released under the terms of the [MIT License.](mit) <3
