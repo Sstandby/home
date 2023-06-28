@@ -1,34 +1,34 @@
-import { component$ } from "@builder.io/qwik";
-import NavButton from "~/components/buttons/NavButton";
+import { component$ } from "@builder.io/qwik"
+import NavButton from "~/components/buttons/NavButton"
 
-import IconTag from "~/components/icons/IconTag";
-import IconHome from "~/components/icons/IconHome";
-import IconAtom from "~/components/icons/IconAtom";
-import IconTerminal from "~/components/icons/IconTerminal";
-import IconDarkMode from "~/components/icons/IconDarkMode";
+import { LuHome, LuMicroscope, LuMoon, LuTag, LuTerminalSquare } from "@qwikest/icons/lucide"
 
 export default component$(() => {
   const icons = [
-    { Icon: IconHome },
-    { Icon: IconTag },
-    { Icon: IconAtom },
-    { Icon: IconTerminal },
-  ];
+    { icon: <LuHome /> },
+    { icon: <LuTag /> },
+    { icon: <LuMicroscope /> },
+    { icon: <LuTerminalSquare /> },
+  ]
   return (
     <header>
-      <nav class="flex flex-col items-center justify-between w-24 h-screen border-r bg-home-blue-500 rounded-r py-9">
+      <nav class="flex flex-col items-center justify-between w-min py-9 px-4 bg-gradient-to-b from-home-blue-400 to-home-blue-600 h-screen text-icon-inactive text-2xl">
         <NavButton>
-          <IconHome />
+          <div class="flex">
+            <LuHome />
+          </div>
         </NavButton>
-        <div class="flex flex-col items-center justify-center space-y-6">
-          {icons.map(({ Icon }, index) => (
-            <NavButton key={index} Icon={Icon} />
+        <div class="flex flex-col items-center justify-center gap-8">
+          {icons.map(({ icon }, index) => (
+            <NavButton key={index}>
+              <div class="flex">{icon}</div>
+            </NavButton>
           ))}
         </div>
         <NavButton>
-          <IconDarkMode />
+          <LuMoon />
         </NavButton>
       </nav>
     </header>
-  );
-});
+  )
+})

@@ -22,6 +22,7 @@ tsdoc-metadata.json
 target
 output
 rollup.config.js
+tailwind.config.js
 build
 .cache
 .vscode

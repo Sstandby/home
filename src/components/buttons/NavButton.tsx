@@ -1,14 +1,9 @@
-import { Slot, component$ } from "@builder.io/qwik";
+import { Slot, component$ } from "@builder.io/qwik"
 
-interface NavButtonProps {
-  Icon?: any;
-}
-
-export default component$(({ Icon }: NavButtonProps) => {
+export default component$(() => {
   return (
-    <button class="flex w-14 h-14 justify-center items-center rounded-full border-2 bg-home-blue-400 opacity-50 focus:opacity-100 focus:outline-none hover:opacity-100">
+    <button class="flex w-14 h-14 justify-center items-center rounded-full bg-home-blue-500 outline-none focus:text-icon-active hover:text-icon-active duration-200">
       <Slot />
-      {Icon && <Icon />}
     </button>
-  );
-});
+  )
+})
