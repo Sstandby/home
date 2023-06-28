@@ -12,7 +12,7 @@ export default component$(() => {
   ]
   return (
     <header>
-      <nav class="flex flex-col items-center justify-between w-min py-9 px-4 bg-gradient-to-b from-home-blue-400 to-home-blue-600 h-screen text-icon-inactive text-2xl">
+      <nav class="flex flex-col items-center justify-between w-min py-9 px-4 bg-black/20 h-screen text-icon-inactive text-2xl">
         <NavButton>
           <LuHome />
         </NavButton>
