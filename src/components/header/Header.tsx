@@ -14,15 +14,11 @@ export default component$(() => {
     <header>
       <nav class="flex flex-col items-center justify-between w-min py-9 px-4 bg-gradient-to-b from-home-blue-400 to-home-blue-600 h-screen text-icon-inactive text-2xl">
         <NavButton>
-          <div class="flex">
-            <LuHome />
-          </div>
+          <LuHome />
         </NavButton>
         <div class="flex flex-col items-center justify-center gap-8">
           {icons.map(({ icon }, index) => (
-            <NavButton key={index}>
-              <div class="flex">{icon}</div>
-            </NavButton>
+            <NavButton key={index}>{icon}</NavButton>
           ))}
         </div>
         <NavButton>
