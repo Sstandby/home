@@ -1,7 +1,13 @@
-import { component$ } from "@builder.io/qwik"
-import NavButton from "~/components/buttons/NavButton"
+import { component$ } from "@builder.io/qwik";
+import NavButton from "~/components/buttons/NavButton";
 
-import { LuHome, LuMicroscope, LuMoon, LuTag, LuTerminalSquare } from "@qwikest/icons/lucide"
+import {
+  LuHome,
+  LuMicroscope,
+  LuMoon,
+  LuTag,
+  LuTerminalSquare,
+} from "@qwikest/icons/lucide";
 
 export default component$(() => {
   const icons = [
@@ -9,10 +15,10 @@ export default component$(() => {
     { icon: <LuTag /> },
     { icon: <LuMicroscope /> },
     { icon: <LuTerminalSquare /> },
-  ]
+  ];
   return (
     <header>
-      <nav class="flex flex-col items-center justify-between w-min py-9 px-4 bg-black/20 h-screen text-icon-inactive text-2xl">
+      <nav class="fixed flex flex-col items-center justify-between w-min py-9 px-4 bg-black/20 h-screen text-icon-inactive text-[30px]">
         <NavButton>
           <LuHome />
         </NavButton>
@@ -26,5 +32,5 @@ export default component$(() => {
         </NavButton>
       </nav>
     </header>
-  )
-})
+  );
+});
