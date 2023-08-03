@@ -27,9 +27,9 @@ export default component$(() => {
     },
   ];
   return (
-    <div class="relative left-[88px] top-[538px]">
+    <div class="flex items-end h-screen">
       <div class="bg-gradient-to-b from-home-blue-600 w-[1334px] h-56 bg-black rounded-3xl">
-        <div class="relative flex justify-start ml-20 top-[-94px] space-x-8">
+        <div class="relative flex justify-start ml-20 top-[-84px] space-x-8">
           {items.map(({ img, title, likes, avatar }, index) => (
             <NewPost
               key={index}

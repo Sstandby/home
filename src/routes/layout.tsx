@@ -16,7 +16,7 @@ export const onGet: RequestHandler = async ({ cacheControl }) => {
 export default component$(() => {
   return (
     <>
-      <div class="bg-gradient-to-b from-home-blue-400 to-home-blue-600 min-h-screen overflow-hidden">
+      <div class="bg-gradient-to-b from-home-blue-400 to-home-blue-600 min-h-screen overflow-hidden flex flex-row">
         <Header />
         <main>
           <Slot />

@@ -18,7 +18,7 @@ export default component$(() => {
   ];
   return (
     <header>
-      <nav class="fixed flex flex-col items-center justify-between w-min py-9 px-4 bg-black/20 h-screen text-icon-inactive text-[30px]">
+      <nav class="sticky left-0 flex flex-col items-center justify-between w-min py-9 px-4 bg-black/20 min-h-screen text-icon-inactive text-[30px]">
         <NavButton>
           <LuHome />
         </NavButton>
